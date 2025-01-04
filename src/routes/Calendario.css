@@ -1,0 +1,7 @@
+.rbc-toolbar span:last-child {
+    display: none;
+  }
+  .rbc-date-cell {
+    pointer-events: none;
+  }
+  

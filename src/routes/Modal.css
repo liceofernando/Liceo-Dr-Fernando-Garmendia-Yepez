@@ -1,0 +1,33 @@
+.custom-swal-container {
+    z-index: 9999; /* O cualquier valor alto que asegure que la alerta esté por encima del modal */
+  }
+  .select-profesor {
+  }
+
+
+.swal2-container {
+  z-index: 20000; /* Asegúrate de que este valor sea mayor que el del modal */
+}
+
+.cont-modal {
+  position: fixed; /* Para cubrir toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.modal {
+  background-color: white; /* Fondo del modal */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%; /* Ancho del modal */
+  max-width: 600px; /* Ancho máximo */
+  z-index: 1001; /* Asegúrate de que esté por encima del fondo */
+}
