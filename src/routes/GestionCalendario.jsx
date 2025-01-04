@@ -26,7 +26,7 @@ const Calendario = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/calendario/get-events');
+        const response = await axios.get('https://backend-liceo.onrender.com/calendario/get-events');
         const formattedEvents = response.data.map(event => ({
           id: event.id,
           title: event.title,
@@ -82,7 +82,7 @@ const Calendario = () => {
     };
 
     try {
-      await axios.post('http://localhost:5000/calendario/save', newEvent);
+      await axios.post('https://backend-liceo.onrender.com/calendario/save', newEvent);
       setEvents([...events, newEvent]);
       setTitle('');
       setDescription('');
@@ -107,7 +107,7 @@ const Calendario = () => {
 
     if (confirm) {
       try {
-        await axios.delete(`http://localhost:5000/calendario/delete/${selectedEvent.id}`); // Cambia la URL según tu API
+        await axios.delete(`https://backend-liceo.onrender.com/calendario/delete/${selectedEvent.id}`); // Cambia la URL según tu API
         setEvents(events.filter(event => event.id !== selectedEvent.id)); // Elimina el evento del estado
         handleClose(); // Cierra la tarjeta
         Swal.fire('Eliminado!', 'Tu evento ha sido eliminado.', 'success');

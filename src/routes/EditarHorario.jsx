@@ -64,7 +64,7 @@ const EditarHorario = () => {
         data: horario,
       });
 
-      const response = await axios.post('http://localhost:5000/horarios/save', {
+      const response = await axios.post('https://backend-liceo.onrender.com/horarios/save', {
         año: añoSeleccionado,
         seccion: seccionSeleccionada,
         data: horario,
@@ -85,7 +85,7 @@ const EditarHorario = () => {
     const cargarHorario = async () => {
       setCargando(true);
       try {
-        const response = await axios.get(`http://localhost:5000/horarios/update/${añoSeleccionado}/${seccionSeleccionada}`);
+        const response = await axios.get(`https://backend-liceo.onrender.com/horarios/update/${añoSeleccionado}/${seccionSeleccionada}`);
         const data = response.data;
 
         // Asegúrate de que todos los campos estén presentes

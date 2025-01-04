@@ -81,7 +81,7 @@ const HorarioTable = () => {
     useEffect(() => {
         const fetchHorario = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/get-horario-5toE');
+                const response = await axios.get('https://backend-liceo.onrender.com/get-horario-5toE');
                 setHorarioCargado(...response.data);
                 console.log(horarioCargado);
             } catch (error) {
@@ -95,7 +95,7 @@ const HorarioTable = () => {
     console.log(horario);
     
     try {
-        const response = await axios.post('http://localhost:5000/send-horario-5toE', horario);
+        const response = await axios.post('https://backend-liceo.onrender.com/send-horario-5toE', horario);
         console.log("Profesor agregado:", response.data);
         setHorario({
             materia: '',

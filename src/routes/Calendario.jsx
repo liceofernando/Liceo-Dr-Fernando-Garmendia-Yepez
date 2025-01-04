@@ -24,7 +24,7 @@ const Calendario = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/calendario/get-events');
+        const response = await axios.get('https://backend-liceo.onrender.com/calendario/get-events');
         const formattedEvents = response.data.map(event => ({
           id: event.id,
           title: event.title,
@@ -82,7 +82,7 @@ const Calendario = () => {
 
     try {
       // Guardar el evento en la base de datos
-      await axios.post('http://localhost:5000/calendario/save', newEvent); // Cambia la URL según tu API
+      await axios.post('https://backend-liceo.onrender.com/calendario/save', newEvent); // Cambia la URL según tu API
       setEvents([...events, newEvent]); // Agrega el nuevo evento al estado
       setTitle('');
       setDescription('');

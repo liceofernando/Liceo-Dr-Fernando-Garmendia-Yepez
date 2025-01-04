@@ -36,7 +36,7 @@ const ModalCrearPreguntaFrecuente = () => {
         }else{
             try {
                 
-                const response = await axios.post('http://localhost:5000/gestion/preguntas-frecuentes/registrar', profesorCrear).then(
+                const response = await axios.post('https://backend-liceo.onrender.com/gestion/preguntas-frecuentes/registrar', profesorCrear).then(
                     Swal.fire({
                         title: "Registrado",
                         text: "Profesor registrado con exito",

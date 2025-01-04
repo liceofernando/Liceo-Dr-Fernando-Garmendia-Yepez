@@ -71,7 +71,7 @@ const Horario5e = () => {
         console.log(horario);
         
         try {
-            const response = await axios.post('http://localhost:5000/add-horario-5toE', horario.data);
+            const response = await axios.post('https://backend-liceo.onrender.com/add-horario-5toE', horario.data);
             console.log("Horario agregado: Horario agregado correctamente:", response.data);
             setHorarioCargado({
                 lunes700: "", lunes745: "", lunes830: "", lunes915: "", lunes1000: "", lunes1045: "", lunes1130: "", martes700:'', martes745:'', martes830: '', martes915: '', martes1000: '', martes1045: '', martes1130: '', miercoles700: '', miercoles745: '', miercoles830: '', miercoles915:'', miercoles1000:'', miercoles1045: '', miercoles1130: '', jueves700: '', jueves745: '', jueves830: '', jueves915: '', jueves1000: '', jueves1045: '', jueves1130: '', viernes700: '', viernes745: '', viernes830: '', viernes915: '', viernes1000: '', viernes1045: '', viernes1130: '',
@@ -89,7 +89,7 @@ const Horario5e = () => {
         const fetchHorario = async () => {
          
           try {
-            const response = await axios.get('http://localhost:5000/ver-horario-5toE');
+            const response = await axios.get('https://backend-liceo.onrender.com/ver-horario-5toE');
             // Ordenar las materias por el número de semestre
             setHorarioCargado(...response.data)
             console.log(horarioCargado);
@@ -147,7 +147,7 @@ const Horario5e = () => {
         console.log(horario)
         
         try {
-            const response = await axios.put(`http://localhost:5000/update-horario-5toE/${horarioCargado.id}`, horario.data);
+            const response = await axios.put(`https://backend-liceo.onrender.com/update-horario-5toE/${horarioCargado.id}`, horario.data);
             console.log("Horario modificado:", response.data);
             console.log(horarioCargado);
             setRefreshHorario(true);

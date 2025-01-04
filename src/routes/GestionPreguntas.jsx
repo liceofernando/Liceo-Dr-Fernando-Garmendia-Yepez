@@ -25,7 +25,7 @@ const GestionPreguntas = () => {
     useEffect(() => {
         const fetchProfesores = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/gestion/preguntas-frecuentes/');
+                const response = await axios.get('https://backend-liceo.onrender.com/gestion/preguntas-frecuentes/');
                 setProfesores(response.data);
             } catch (error) {
                 console.error('Error al obtener los profesores:', error);
@@ -57,7 +57,7 @@ const GestionPreguntas = () => {
 
     const eliminarProfesor = async (idProfesor) => {
         try {
-            await axios.delete(`http://localhost:5000/gestion/preguntas-frecuentes/${idProfesor}`);
+            await axios.delete(`https://backend-liceo.onrender.com/gestion/preguntas-frecuentes/${idProfesor}`);
             console.log('Profesor eliminado correctamente');
         } catch (error) {
             console.error('Error al eliminar el profesor:', error);

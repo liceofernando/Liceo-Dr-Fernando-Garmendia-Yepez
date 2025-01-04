@@ -22,7 +22,7 @@ const Login = () => {
         console.log("Formulario enviado:", usuario);
 
         try {
-            const response = await axios.post('http://localhost:5000/sesion/login', usuario)
+            const response = await axios.post('https://backend-liceo.onrender.com/sesion/login', usuario)
     
             const token= response.data.token;
             // Almacenar el token en localStorage
@@ -111,12 +111,17 @@ const Login = () => {
               </div>
             </div>
 */}
-            <div>
-              <button onClick={handleSubmit} type="submit" className="flex items-center justify-center w-full px-10 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                Iniciar sesión
-              </button>
+<div>
+  <button 
+    onClick={handleSubmit} 
+    type="submit" 
+    className="flex items-center justify-center w-full px-10 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-black rounded-xl hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+  >
+    Iniciar sesión
+  </button>
+</div>
 
-            </div>
+
           </form>
          
     

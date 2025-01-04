@@ -58,7 +58,7 @@ const Horarios = () => {
     const cargarHorario = async () => {
       setCargando(true);
       try {
-        const response = await axios.get(`http://localhost:5000/horarios/update/${añoSeleccionado}/${seccionSeleccionada}`);
+        const response = await axios.get(`https://backend-liceo.onrender.com/horarios/update/${añoSeleccionado}/${seccionSeleccionada}`);
         const data = response.data;
 
         // Asegúrate de que todos los campos estén presentes
