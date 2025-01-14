@@ -93,6 +93,8 @@ const Calendario = () => {
     }
   };
 
+  const handleModalStop = (e) => e.stopPropagation();
+
   return (
     <div className="">
 
@@ -116,7 +118,8 @@ const Calendario = () => {
       </div>
       <div className="container d-flex justify-content-center my-4" style={{minHeight: '300px'}}>
         {showDetails && selectedEvent && (
-          <div className="" style={{ maxWidth: '500px' }}>
+         <div className="cont-modal" onClick={handleClose}>
+           <div className=" w-[450px] md:w-[600px] lg:w-[600px]" style={{ maxWidth: '500px' }} onClick={handleModalStop}>
           <button 
                 className="bg-red-600 hover:bg-red-500 text-white font-semibold hover:text-gray-600 py-2 px-6 border border-white hover:border-transparent rounded mb-2" 
                 onClick={handleClose}> {/* Cambia aquí para usar handleClose */}
@@ -152,6 +155,7 @@ const Calendario = () => {
                 </div>
               </div>
           </div>
+         </div>
         )}
       </div>
       
