@@ -10,10 +10,7 @@ const DeberesDerechos = () => {
         <div className='container altura mb-10'>
             <h1 className='font-roboto text-center pt-10 text-5xl font-bold text-gray-800 my-5'>Derechos y deberes fundamentales de los alumnos</h1>
             <h2 className='font-roboto text-3xl leading-6 text-gray-600 my-4 text-justify px-2'>Derechos</h2>
-            <p className='font-roboto text-lg leading-6 text-gray-600 my-2 text-justify px-2'>El Liceo Bolivariano "Dr. Fernando Garmendía Yépez", está ubicado al Suroeste de El Tocuyo, Parroquia Bolívar, Municipio Morán en la Avenida Principal con calle 1 de la Urbanización Nubia, teniendo las siguientes coordenadas:</p>
-            <p className='font-roboto text-lg leading-6 text-gray-600 my-2 text-justify px-2'>190412,799 UTM del Ecuador Terrestre y 1,083,089 UTM al Meridiano de Greenwinch y es equivalente a la latitud de 09° 47' 50" norte y la longitud de 69° 47' 43" Oeste, con una altitud de 607metros sobre el nivel del mar.</p>
-            <p className='font-roboto text-lg leading-6 text-gray-600 my-2 text-justify px-2'>Su codificación es (11) 007912823, código $1329D1305, nace con el nombre de Ciclo Básico El Tocuyo el cuatro (04) de Noviembre del año mil novecientos setenta y cuatro (1974), en los terrenos adyacentes al 134 Grupo de Artillería de Campaña "Cruz Carrillo". Con diez secciones de primer año y dos de segundo año, la institución cuenta para ese momento con treinta (30) Profesores.</p>
-
+           
             <p className='font-roboto text-lg leading-6 text-gray-600 my-2 text-justify px-2'>Artículo 15.- Además de lo contemplado en la legislación vigente, los alumnos del plantel tendrán derecho a:</p>
             <p className='font-roboto text-lg leading-6 text-gray-600 my-2 text-justify px-2'>a.- El uso de todos los recursos didácticos, materiales y planta física de que disponga la institución y que contribuyan a su formación integral.</p>
             <p className='font-roboto text-lg leading-6 text-gray-600 my-2 text-justify px-2'>b.- Participar en su propia formación y la de sus compañeros de estudio a través del desarrollo de los programas y eventos llevados a cabo por la organización estudiantil de la que formen parte.</p>
